@@ -1,0 +1,19 @@
+{
+  "name": "curso_node",
+  "version": "1.0.0",
+  "description": "Aplicación del Clima - GeoLocation + Open Weather",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pachecoSen/Curso_Node_Seccion_6.git"
+  },
+  "author": "Ignacio Pacheco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pachecoSen/Curso_Node_Seccion_6/issues"
+  },
+  "homepage": "https://github.com/pachecoSen/Curso_Node_Seccion_6#readme"
+}
