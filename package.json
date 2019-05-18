@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/pachecoSen/Curso_Node_Seccion_6/issues"
   },
-  "homepage": "https://github.com/pachecoSen/Curso_Node_Seccion_6#readme"
+  "homepage": "https://github.com/pachecoSen/Curso_Node_Seccion_6#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
 }
