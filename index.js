@@ -1,12 +1,19 @@
 const { direccion } = require("./config/yargs");
 
-const posiccion = require("./src/geoPosicion");
+const posiccion = require("./src/geoPosicion"),
+    clima = require("./src/geoClima");
 
 posiccion(direccion)
     .then(result => {
-        const { name:direccion, lat, lon:lng } = result;
+        const { lat, lon } = result;
 
-        return { direccion, lat, lng };
+        return { lat, lon };
     })
-    .then(result => console.log(result))
-    .catch(err => console.log(err));
+    .then(clima)
+    .then(data => {
+        data['direccion'] = direccion;
+
+        return data;
+    })
+    .then(console.log)
+    .catch(console.log);
